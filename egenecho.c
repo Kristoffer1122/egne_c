@@ -12,12 +12,6 @@ int main(int argc, char **argv) {
 		// huske lengden av argumentene
 		size_t totalLen = 0;
 
-		for (int x = 0; x < argc; ++x) {
-			// legge til en for mellomromm eller \0
-			totalLen += strlen(argv[x]) + 1;
-			// printf("%s\n", argv[x]);
-		}
-
 		// avsette plass for inputten
 		char *input = malloc(totalLen);
 
